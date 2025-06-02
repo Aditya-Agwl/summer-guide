@@ -1,5 +1,5 @@
 // src/App.jsx
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import TimelinePage from "./pages/TimelinePage";
 import ProfilesPage from "./pages/ProfilesPage";
@@ -10,7 +10,7 @@ import Resources from "./pages/Resources";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <nav className="bg-[#1f1f1f] text-white p-4 shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link to="/" className="text-2xl font-bold text-white">Summer Guide</Link>
@@ -32,7 +32,8 @@ function App() {
         <Route path="/profiles/non-tech" element={<ProfilesNonTech />} />
         <Route path="/resources" element={<Resources />}/>
       </Routes>
-    </Router>
+    </BrowserRouter>
+    
   );
 }
 
