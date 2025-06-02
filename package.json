@@ -2,6 +2,7 @@
   "name": "summer-guide",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://aditya-agwl.github.io/summer-guide-CQ-Assocs",
   "type": "module",
   "scripts": {
     "dev": "vite",
